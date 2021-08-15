@@ -4,7 +4,7 @@ Role game is a homework that I had, but now I want to make it very complex and w
 
 ## Installation
 
-you can download the .py and the requirement.txt file to star seeing the game (and the issues)
+You can download the .py and the requirement.txt file to star seeing the game (and the issues) and you need to install in your terminal "sl".
 
 ## Usage
 

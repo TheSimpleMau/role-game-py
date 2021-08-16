@@ -480,6 +480,7 @@ def dos_puertas(key_door,wall_phrase,lucky):
         time.sleep(5)
         answer_2 = puerta_numero(lucky)
         if answer_2 == 1:
+            os.system('clear')
             print('Correcto, te deja pasar el guardia y... Ahí esta el cofre!!!')
             print(OPEN_CHEST)
             exit()
@@ -569,7 +570,19 @@ def camino_up_down(lucky):
 #una pequeña historia introductoria al juego
 def begin_story():
     os.system('clear')
-    cowsay.cow('Este juego se basa en tomar desciones... y de tu suerte. Así que SUERTE!!!')
+    cowsay.cow('Bienvenido nuevo usario, este es el juego del cofre del tesoro')
+    time.sleep(5)
+    os.system('clear')
+    cowsay.cow('En esta aventura, serás un el tierno pingüino de linux, tux!!!')
+    time.sleep(5)
+    os.system('clear')
+    cowsay.cow('Tendrás que ir tomandos deciones y resolviendo acertijos según se presente el caso')
+    time.sleep(5)
+    os.system('clear')
+    cowsay.cow('Solo al inicio del juego, tendrás que escribir tu respuesta. Después, podrás simplmente escribir la letra de la opción que quieras')
+    time.sleep(8)
+    os.system('clear')
+    cowsay.cow('''Por último, este juego, también tiene un pequeño factor de "aleatoriedad". Así que SUERTE!!!''')
     time.sleep(5)
     os.system('clear')
     os.system('sl -l')

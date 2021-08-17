@@ -96,18 +96,18 @@ NUCLEAR_EXPLOSION = r'''
 _____________/_ __ \_____________'''
 
 
-KEY_LOCK = r'''
+LOCK = r'''
      .--------.
     / .------. \
-   / /        \ \
+   / /        \ \   
    | |        | |
   _| |________| |_
 .' |_|        |_| '.
 '._____ ____ _____.'
-|     .'____'.     |
-'.__.'.'    '.'.__.'
-'.__  | YALE |  __.'
-|   '.'.____.'.'   |
+|     .'____'.     |         8 8 8 8                     ,ooo.
+'.__.'.'    '.'.__.'         8a8 8a8                    oP   ?b
+'.__  | YALE |  __.'        d888a888zzzzzzzzzzzzzzzzzzzz8     8b
+|   '.'.____.'.'   |         `""^""'                    ?o___oP'
 '.____'.____.'____.'
 '.________________.'
 '''
@@ -404,7 +404,7 @@ def dos_puertas(key_door,wall_phrase,lucky):
     if key_door == 1 and  wall_phrase == 1:
         print(f'''Que puerta quieres tomar?
 {LETTERS[0]} Puerta con llave
-{KEY_LOCK}
+{LOCK}
 {LETTERS[1]} Puerta con números
 {PAD_LOCK}
 ''')
@@ -450,7 +450,7 @@ def dos_puertas(key_door,wall_phrase,lucky):
                     exit()
     elif key_door == 1 and wall_phrase == 0:
         print('Como solo tienes una llave, decides abrir esa puerta y...')
-        print(KEY_LOCK)
+        print(LOCK)
         time.sleep(5)
         answer_2 = puerta_llave(lucky)
         if answer_2 == 1:
@@ -570,13 +570,13 @@ def camino_up_down(lucky):
 #una pequeña historia introductoria al juego
 def begin_story():
     os.system('clear')
-    cowsay.cow('Bienvenido nuevo usario, este es el juego del cofre del tesoro')
+    cowsay.cow('Bienvenido nuevo usuario, este es el juego del cofre del tesoro')
     time.sleep(5)
     os.system('clear')
     cowsay.cow('En esta aventura, serás un el tierno pingüino de linux, tux!!!')
     time.sleep(5)
     os.system('clear')
-    cowsay.cow('Tendrás que ir tomandos deciones y resolviendo acertijos según se presente el caso')
+    cowsay.cow('Tendrás que ir tomandos decisiones y resolviendo acertijos según se presente el caso')
     time.sleep(5)
     os.system('clear')
     cowsay.cow('Solo al inicio del juego, tendrás que escribir tu respuesta. Después, podrás simplmente escribir la letra de la opción que quieras')
